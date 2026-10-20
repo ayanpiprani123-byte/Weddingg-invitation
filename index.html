@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173b31">
+<title>Wedding Invitation — Ammar & Ruman · Faizan & Rushan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#173b31;--forest2:#214a3d;--sage:#dce7dc;--paper:#fbfaf5;--white:#fffefa;--ink:#25372f;--muted:#6d7c71;--gold:#b9a16b;--line:#d6dfd3;--rose:#bd8d8a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif}button,a{font:inherit}button{cursor:pointer}::selection{background:#dce7dc;color:var(--forest)}
+.hero{min-height:100svh;display:grid;place-items:center;padding:36px 18px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 0%,#e9f0e7 0,#d8e4d8 42%,#b9cdbd 100%)}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid #ffffff80;border-radius:50%;width:440px;height:440px;pointer-events:none}.hero:before{top:-270px;left:-150px}.hero:after{bottom:-320px;right:-140px;width:550px;height:550px}
+.cover-inner{width:min(100%,450px);text-align:center;position:relative;z-index:1}.eyebrow{font-size:10px;letter-spacing:3.2px;text-transform:uppercase;color:var(--forest2);font-weight:700}.cover-title{font:500 clamp(32px,8vw,46px)/1.05 "Cormorant Garamond",serif;color:var(--forest);margin:18px 0 4px}.cover-sub{font:italic 20px "Cormorant Garamond",serif;color:#667e6c;margin:0}
+.envelope{width:min(86vw,340px);height:235px;position:relative;margin:38px auto 25px;perspective:1000px;filter:drop-shadow(0 18px 22px #1d463020);cursor:pointer;outline:none}
+.env-body{position:absolute;inset:0;background:#e8eee4;border:1px solid #c4d1c3;border-radius:5px;overflow:hidden}
+.env-body:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49.7%,#cddacb 50%,transparent 50.5%),linear-gradient(215deg,transparent 49.7%,#d3dfd1 50%,transparent 50.5%)}
+.letter{position:absolute;z-index:1;left:7%;width:86%;height:83%;top:7%;background:var(--white);border:1px solid #d6ddcf;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:top 1s ease,transform 1s ease}
+.letter .mini{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}.letter .mini-title{font:600 27px "Cormorant Garamond",serif;color:var(--forest);margin:10px 0}.letter .mini-flourish{color:var(--gold);letter-spacing:5px}
+.flap{position:absolute;z-index:4;top:0;left:0;width:0;height:0;border-left:170px solid transparent;border-right:170px solid transparent;border-top:130px solid #d2dfd0;transform-origin:top;transition:transform .8s ease;filter:drop-shadow(0 2px 1px #9aaf9a45)}
+.seal{position:absolute;z-index:5;top:91px;left:calc(50% - 27px);width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#416d58,#173b31 75%);color:#f4f0df;border:2px solid #d8c89b;box-shadow:0 3px 9px #173b3133;font:600 20px "Cormorant Garamond",serif;transition:opacity .3s,transform .3s}
+.envelope.open .flap{transform:rotateX(180deg);z-index:0}.envelope.open .letter{top:-22%;transform:translateY(-45px)}.envelope.open .seal{opacity:0;transform:scale(.6)}
+.open-btn{border:1px solid var(--forest);border-radius:30px;padding:13px 23px;background:var(--forest);color:#fffefa;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;box-shadow:0 8px 20px #173b3118}.open-btn:hover{background:var(--forest2)}.cover-note{font:italic 17px "Cormorant Garamond",serif;color:#5e7664;margin-top:22px}
+#invitation{display:none}#invitation.visible{display:block;animation:fadeIn 1.1s ease both}@keyframes fadeIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.section{padding:76px 20px;text-align:center;position:relative}.section-inner{max-width:760px;margin:auto}.dark{background:var(--forest);color:#f8f7ef}.dark .eyebrow,.dark .sub{color:#c8d7c8}.dark h2,.dark .names{color:#f8f7ef}.dark .script{color:#d8c99f}
+.ornament{color:var(--gold);letter-spacing:7px;font-size:17px;margin:0 0 18px}.arabic{font:600 clamp(26px,6vw,36px)/1.8 "Noto Naskh Arabic",serif;color:var(--forest);direction:rtl;margin:5px auto}.dark .arabic{color:#f4eedc}
+h1,h2,h3,p{font-weight:400}h1{font:500 clamp(34px,7vw,58px)/1.08 "Cormorant Garamond",serif;margin:18px 0;color:var(--forest)}h2{font:500 clamp(31px,6vw,45px)/1.1 "Cormorant Garamond",serif;margin:10px 0 20px;color:var(--forest)}h3{font:500 24px "Cormorant Garamond",serif;margin:8px 0}.eyebrow{margin:0 0 12px}
+.names{font:500 clamp(23px,5vw,32px)/1.55 "Cormorant Garamond",serif;color:var(--forest)}.amp{color:var(--gold);padding:0 8px}.script{font:italic clamp(25px,5vw,34px) "Cormorant Garamond",serif;color:#7d967f;margin:22px 0 8px}.sub{font-size:13px;line-height:1.9;color:var(--muted);max-width:570px;margin:12px auto}.rule{height:1px;width:90px;background:var(--gold);margin:25px auto}
+.invite-card{background:#f1f4ed;border:1px solid var(--line);padding:30px 23px;max-width:640px;margin:24px auto 0;box-shadow:0 12px 30px #1c3b2b08}.invite-card p{font:500 19px/1.8 "Cormorant Garamond",serif;margin:0}.invite-card .smallcopy{font:12px/2 Manrope,sans-serif;color:var(--muted);margin-top:16px}
+.dates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:590px;margin:30px auto 0}.date-card{position:relative;min-height:200px;background:#fffefa;border:1px solid var(--line);padding:23px 15px;overflow:hidden}.date-card .month{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#7b907b}.date-card .day{font:500 56px/1 "Cormorant Garamond",serif;color:var(--forest);margin:9px 0}.date-card .weekday{font-size:11px;color:var(--muted);letter-spacing:1px}.scratch-area{position:absolute;inset:0;z-index:3;touch-action:none;cursor:crosshair}.scratch-area canvas{width:100%;height:100%;display:block}.scratch-hint{position:absolute;z-index:4;bottom:12px;left:0;right:0;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;pointer-events:none;text-shadow:0 1px 3px #0005}.date-details{font-size:12px;line-height:1.8;color:var(--forest);margin-top:12px}.time{font-weight:700;letter-spacing:1px}
+.venue-card{max-width:700px;margin:28px auto 0;background:#fffefa;border:1px solid var(--line);padding:12px;text-align:left;box-shadow:0 14px 35px #173b310d}.venue-photo{min-height:210px;display:grid;place-items:center;text-align:center;padding:24px;background:linear-gradient(135deg,#dce7dc,#eff2e8);color:var(--forest);position:relative;overflow:hidden}.venue-photo:before{content:"";position:absolute;width:200px;height:200px;border:1px solid #ffffffb0;border-radius:50%;top:-100px;right:-60px}.venue-photo .photo-mark{font:500 44px "Cormorant Garamond",serif;opacity:.75}.venue-photo p{font-size:11px;line-height:1.8;max-width:300px;position:relative}.venue-meta{padding:20px 12px 12px;text-align:center}.venue-meta h3{color:var(--forest);font-size:27px}.map-link{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:12px 18px;border-radius:30px;text-decoration:none;color:#fffefa;background:var(--forest);font-size:11px;letter-spacing:.8px}.map-link:hover{background:var(--forest2)}
+.verse{max-width:650px;margin:30px auto 0;padding:30px 22px;border-top:1px solid #b9a16b70;border-bottom:1px solid #b9a16b70}.verse .translation{font:italic 20px/1.7 "Cormorant Garamond",serif;margin:7px 0}.verse .ref{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-width:490px;margin:30px auto 0}.time-box{padding:18px 5px;border:1px solid #c8d6c8;background:#ffffff0c}.time-box strong{display:block;font:500 clamp(26px,5vw,39px) "Cormorant Garamond",serif;color:#f4eedc}.time-box span{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c8d7c8}
+.footer{background:#102d25;color:#c8d7c8;padding:35px 18px 42px;text-align:center;font-size:11px;line-height:2}.footer strong{color:#f4eedc;letter-spacing:1px}.music-toggle{position:fixed;right:14px;bottom:14px;z-index:20;border:1px solid #c7d4c5;background:#f8f8f0ed;color:var(--forest);border-radius:30px;padding:11px 14px;font-size:10px;letter-spacing:.5px;box-shadow:0 5px 18px #102d2518}.petal{position:fixed;z-index:30;top:-30px;pointer-events:none;color:#c28f91;font-size:18px;animation:fall linear forwards;opacity:.8}@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(520deg);opacity:0}}
+@media(max-width:420px){.section{padding:60px 16px}.dates{gap:10px}.date-card{padding:19px 8px;min-height:190px}.flap{border-left-width:43vw;border-right-width:43vw}.envelope{height:220px}.venue-photo{min-height:180px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<section class="hero" id="cover">
+ <div class="cover-inner">
+  <p class="eyebrow">Together with our families</p>
+  <h1 class="cover-title">A Celebration of<br>Love & Barakah</h1>
+  <p class="cover-sub">Two hearts. Two beginnings. One beautiful celebration.</p>
+  <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open wedding invitation">
+   <div class="env-body"></div>
+   <div class="letter"><span class="mini">A special invitation</span><span class="mini-title">Wedding Celebration</span><span class="mini-flourish">✦ ❧ ✦</span></div>
+   <div class="flap"></div><div class="seal">﷽</div>
+  </div>
+  <button class="open-btn" id="openBtn">Tap to open · ✦</button>
+  <p class="cover-note">With dua, love and the blessings of our families</p>
+ </div>
+</section>
+<main id="invitation">
+ <section class="section">
+  <div class="section-inner">
+   <p class="ornament">✦ ❧ ✦</p>
+   <p class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+   <p class="eyebrow">Bismillah-ir-Rahman-ir-Raheem</p>
+   <h1>Together with our families</h1>
+   <p class="sub">WITH DUAS, LOVE & GRATITUDE</p>
+   <div class="rule"></div>
+   <p class="script">Alhamdulillah, the story begins</p>
+   <p class="sub">OUR FAMILIES JOYFULLY WELCOME YOU TO CELEBRATE THE WEDDINGS OF</p>
+   <div class="names"><div>Dr Ammar <span class="amp">&</span> Dr Ruman</div><div style="font:500 13px Manrope,sans-serif;color:var(--gold);letter-spacing:3px">AND</div><div>Dr Faizan <span class="amp">&</span> Dr Rushan</div></div>
+   <div class="rule"></div>
+   <div class="invite-card"><p>From here, a new journey begins.</p><p class="smallcopy">YOUR PRESENCE, PRAYERS AND BLESSINGS WILL MAKE THIS GRAND CELEBRATION TRULY UNFORGETTABLE.</p></div>
+  </div>
+ </section>
+ <section class="section" style="background:#edf2e9">
+  <div class="section-inner">
+   <p class="ornament">✦ ✧ ✦</p><p class="eyebrow">Keep these moments close</p><h2>Scratch to Reveal the Dates</h2>
+   <p class="sub">Gently rub the cover with your finger to reveal each special day.</p>
+   <div class="dates">
+    <div class="date-card"><div class="month">December</div><div class="day">04</div><div class="weekday">FRIDAY · 2026</div><div class="date-details">4 DECEMBER 2026<br><span class="time">6:00 PM</span></div><div class="scratch-area" aria-label="Scratch to reveal December 4 details"><canvas></canvas><span class="scratch-hint">✦ Scratch to reveal ✦</span></div></div>
+    <div class="date-card"><div class="month">December</div><div class="day">05</div><div class="weekday">SATURDAY · 2026</div><div class="date-details">5 DECEMBER 2026</div><div class="scratch-area" aria-label="Scratch to reveal December 5 details"><canvas></canvas><span class="scratch-hint">✦ Scratch to reveal ✦</span></div></div>
+   </div>
+   <p class="sub" style="margin-top:20px">4TH & 5TH DECEMBER 2026</p>
+  </div>
+ </section>
+ <section class="section">
+  <div class="section-inner"><p class="ornament">❧</p><p class="eyebrow">We look forward to welcoming you</p><h2>The Venue</h2>
+   <div class="venue-card">
+    <a href="https://maps.app.goo.gl/pm9estrRtA1f4Cir5?g_st=ic" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+     <div class="venue-photo"><div><div class="photo-mark">⌖</div><p><strong>MEMON COUNCIL HALL</strong><br>MAHI, RAJOSANA, GUJARAT<br><br>OPEN GOOGLE MAPS FOR DIRECTIONS & VENUE PHOTOS</p></div></div>
+    </a>
+    <div class="venue-meta"><h3>Memon Council (Hall)</h3><p class="sub">Mahi, Rajosana, Gujarat, India</p><a class="map-link" href="https://maps.app.goo.gl/pm9estrRtA1f4Cir5?g_st=ic" target="_blank" rel="noopener">↗ OPEN VENUE IN GOOGLE MAPS</a></div>
+   </div>
+   <p class="sub">The map link opens the exact location and may show available exterior photos and directions.</p>
+  </div>
+ </section>
+ <section class="section" style="background:#edf2e9">
+  <div class="section-inner"><p class="ornament">✦ ❧ ✦</p><p class="eyebrow">A note from our families</p><h2>With Dua & Love</h2>
+   <div class="invite-card"><p>OUR FAMILIES WARMLY WELCOME YOU TO THE WEDDING CELEBRATIONS OF DR AMMAR & DR RUMAN, AND DR FAIZAN & DR RUSHAN.</p><p style="margin-top:14px">FROM HERE, A NEW JOURNEY BEGINS.</p><p class="smallcopy">MAY YOUR PRESENCE ADD JOY TO OUR CELEBRATION, AND MAY YOUR DUAS BLESS THESE NEW BEGINNINGS.</p></div>
+   <div class="verse"><p class="arabic">وَخَلَقْنَاكُمْ أَزْوَاجًا</p><p class="translation">"اور ہم نے تمہیں جوڑے پیدا کیا"</p><p class="translation">“And We created you in pairs.”</p><p class="ref">Surah An-Naba · 78:8</p></div>
+  </div>
+ </section>
+ <section class="section dark">
+  <div class="section-inner"><p class="ornament">✦ ✧ ✦</p><p class="eyebrow">The days are drawing near</p><h2>Countdown to the Celebration</h2><p class="sub">UNTIL 4 DECEMBER 2026 · 6:00 PM</p>
+   <div class="countdown" aria-live="polite"><div class="time-box"><strong id="days">--</strong><span>Days</span></div><div class="time-box"><strong id="hours">--</strong><span>Hours</span></div><div class="time-box"><strong id="minutes">--</strong><span>Minutes</span></div><div class="time-box"><strong id="seconds">--</strong><span>Seconds</span></div></div><p class="sub" id="countdownMessage"></p>
+  </div>
+ </section>
+ <footer class="footer">WITH LOVE, DUAS & GRATITUDE<br><strong>DR AMMAR & DR RUMAN · DR FAIZAN & DR RUSHAN</strong><br>MAY ALLAH BLESS BOTH COUPLES WITH HAPPINESS, MERCY AND BARAKAH. AMEEN.</footer>
+</main>
+<button class="music-toggle" id="musicBtn" aria-label="Music help">♫ MUSIC</button>
+<audio id="bgMusic" loop preload="none"></audio>
+<script>
+const envelope=document.getElementById('envelope'),openBtn=document.getElementById('openBtn');
+let opened=false,petalTimer=null;
+function makePetal(){const p=document.createElement('span');p.className='petal';p.textContent=['❀','✿','❧','✦'][Math.floor(Math.random()*4)];p.style.left=Math.random()*100+'vw';p.style.setProperty('--drift',(Math.random()*160-80)+'px');p.style.animationDuration=(5+Math.random()*5)+'s';p.style.fontSize=(12+Math.random()*13)+'px';document.body.appendChild(p);setTimeout(()=>p.remove(),10500)}
+function openInvitation(){if(opened)return;opened=true;envelope.classList.add('open');openBtn.textContent='Opening your invitation…';for(let i=0;i<18;i++)setTimeout(makePetal,i*90);petalTimer=setInterval(makePetal,450);setTimeout(()=>{document.getElementById('invitation').classList.add('visible');document.getElementById('invitation').scrollIntoView({behavior:'smooth'});openBtn.textContent='Invitation opened ✦';openBtn.disabled=true;setTimeout(()=>{clearInterval(petalTimer);petalTimer=null},12000)},850)}
+openBtn.addEventListener('click',openInvitation);envelope.addEventListener('click',openInvitation);envelope.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openInvitation()}});
+/* Scratch-to-reveal cards */
+document.querySelectorAll('.scratch-area').forEach(area=>{const canvas=area.querySelector('canvas'),ctx=canvas.getContext('2d');let drawing=false,cleared=false;
+function paint(){const r=area.getBoundingClientRect(),dpr=Math.max(1,window.devicePixelRatio||1);canvas.width=Math.round(r.width*dpr);canvas.height=Math.round(r.height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);ctx.globalCompositeOperation='source-over';const g=ctx.createLinearGradient(0,0,r.width,r.height);g.addColorStop(0,'#294f40');g.addColorStop(1,'#8ca58b');ctx.fillStyle=g;ctx.fillRect(0,0,r.width,r.height);ctx.fillStyle='#f4f3e9';ctx.font='600 10px Manrope';ctx.textAlign='center';ctx.fillText('A LITTLE SURPRISE',r.width/2,r.height/2-7);ctx.font='22px Georgia';ctx.fillText('✦  ✧  ✦',r.width/2,r.height/2+20);ctx.globalCompositeOperation='destination-out';}
+function point(e){const r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}}
+function scratch(e){if(!drawing)return;const p=point(e);ctx.globalCompositeOperation='destination-out';ctx.beginPath();ctx.arc(p.x,p.y,19,0,Math.PI*2);ctx.fill();const pixels=ctx.getImageData(0,0,canvas.width,canvas.height).data;let transparent=0;for(let i=3;i<pixels.length;i+=4)if(pixels[i]<30)transparent++;if(!cleared&&transparent/(pixels.length/4)>.42){cleared=true;area.style.transition='opacity .5s';area.style.opacity='0';setTimeout(()=>area.remove(),550)}}
+canvas.addEventListener('pointerdown',e=>{drawing=true;canvas.setPointerCapture(e.pointerId);scratch(e)});canvas.addEventListener('pointermove',scratch);['pointerup','pointercancel','lostpointercapture'].forEach(ev=>canvas.addEventListener(ev,()=>drawing=false));paint();window.addEventListener('resize',()=>{if(!cleared)paint()});});
+const target=new Date('2026-12-04T18:00:00+05:30').getTime();
+function updateCountdown(){const diff=target-Date.now();if(diff<=0){['days','hours','minutes','seconds'].forEach(id=>document.getElementById(id).textContent='0');document.getElementById('countdownMessage').textContent='THE CELEBRATION DAY IS HERE. ALHAMDULILLAH.';return}document.getElementById('days').textContent=Math.floor(diff/86400000);document.getElementById('hours').textContent=Math.floor(diff%86400000/3600000);document.getElementById('minutes').textContent=Math.floor(diff%3600000/60000);document.getElementById('seconds').textContent=Math.floor(diff%60000/1000)}
+updateCountdown();setInterval(updateCountdown,1000);
+document.getElementById('musicBtn').addEventListener('click',async()=>{const audio=document.getElementById('bgMusic'),btn=document.getElementById('musicBtn');if(!audio.src){audio.src='jahan-e-bahaara.mp3';audio.load()}try{if(audio.paused){await audio.play();btn.textContent='♫ MUSIC ON'}else{audio.pause();btn.textContent='♫ MUSIC'}}catch(e){alert('Add a legally obtained audio file named jahan-e-bahaara.mp3 beside index.html to enable the music button. Audio cannot be extracted from the Instagram reel here.');}});
+</script>
+</body>
+</html>
